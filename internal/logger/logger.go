@@ -23,7 +23,7 @@ func New(w io.Writer) (*EventLogger, error) {
 }
 
 func (l *EventLogger) Log(t time.Time, msg string) {
-	_, err := l.w.Write([]byte(fmt.Sprintf("[%s] %s\n", t.Format(timeFormat), msg)))
+	_, err := fmt.Fprintf(l.w, "[%s] %s\n", t.Format(timeFormat), msg)
 	if err != nil {
 		log.Fatal("failed to write log")
 	}
