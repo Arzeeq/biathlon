@@ -1,4 +1,7 @@
 # Biathlon
+[![Linter and tests](https://github.com/Arzeeq/biathlon/actions/workflows/main.yml/badge.svg)](https://github.com/Arzeeq/biathlon/actions/workflows/main.yml)
+
+## Description
 CLI Application for managing biathlon competitions. See [task](Task.md) for more details
 
 ## Run
